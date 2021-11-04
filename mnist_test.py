@@ -1,3 +1,7 @@
+```
+This code is modified from https://www.tensorflow.org/tutorials/quickstart/advanced, which is under Apache 2.0 License.
+```
+
 import numpy as np
 import sys
 import tensorflow as tf
