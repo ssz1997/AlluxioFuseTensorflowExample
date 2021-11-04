@@ -7,7 +7,7 @@ from tensorflow.keras.layers import Dense, Flatten, Conv2D
 from tensorflow.keras import Model
 
 if len(sys.argv) < 2:
-  print ("Please provide the dataset")
+  print("Please provide the dataset")
   sys.exit()
 
 with np.load(sys.argv[1]) as f:
