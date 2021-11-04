@@ -6,6 +6,10 @@ print("TensorFlow version:", tf.__version__)
 from tensorflow.keras.layers import Dense, Flatten, Conv2D
 from tensorflow.keras import Model
 
+if len(sys.argv) < 2:
+  print ("Please provide the dataset")
+  sys.exit()
+
 with np.load(sys.argv[1]) as f:
   x_train, y_train = f['x_train'], f['y_train']
   x_test, y_test = f['x_test'], f['y_test']
